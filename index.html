@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Propuesta definitiva: Plataforma Integral de Trazabilidad Operativa para Metro Cuadrado Eventos y Ferias." />
+<meta name="theme-color" content="#16293D" />
+<title>Propuesta Definitiva — Plataforma de Trazabilidad | Metro Cuadrado Eventos y Ferias</title>
+
+<!-- Favicon -->
+<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/components.css" />
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="top-bar">
+  <div class="top-inner">
+    <div class="top-brand">
+      <div class="top-logo">M²</div>
+      <div class="top-brand-text">
+        <h1>Plataforma Integral de Trazabilidad Operativa</h1>
+        <p>Propuesta definitiva · Metro Cuadrado Eventos y Ferias</p>
+      </div>
+    </div>
+    <div class="top-meta">
+      <span>Pereira · Octubre 2026</span>
+      <span>Versión 2.0 · Definitiva</span>
+      <span class="page-badge"><span class="pb-dot"></span><span id="pageBadgeText">Resumen ejecutivo</span></span>
+    </div>
+
+    <nav class="steps" id="stepsNav" role="tablist" aria-label="Secciones de la propuesta">
+      <button class="step active" data-tab="s1" data-index="0">
+        <span class="step-num">1</span>
+        <span class="step-text"><strong>Resumen ejecutivo</strong><small>Visión, inversión y plazos</small></span>
+      </button>
+      <button class="step" data-tab="s2" data-index="1">
+        <span class="step-num">2</span>
+        <span class="step-text"><strong>Alcance y cronograma</strong><small>MVP detallado + Gantt</small></span>
+      </button>
+      <button class="step" data-tab="s3" data-index="2">
+        <span class="step-num">3</span>
+        <span class="step-text"><strong>Impacto esperado</strong><small>KPIs y beneficios</small></span>
+      </button>
+      <button class="step" data-tab="s4" data-index="3">
+        <span class="step-num">4</span>
+        <span class="step-text"><strong>Anexos técnicos</strong><small>14 documentos de cierre</small></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== TAB 1 · RESUMEN ===================== -->
+<section class="tab-panel active" id="s1">
+  <div class="tab-intro">
+    <h2>Resumen ejecutivo</h2>
+    <p>Una sola plataforma para compras, ventas, logística, proveedores e inventario multi-bodega. Trazabilidad de extremo a extremo, con captura desconectada y sincronización posterior.</p>
+  </div>
+
+  <div class="kpi-hero">
+    <div class="kpi">
+      <div class="kpi-num">$22.000.000</div>
+      <div class="kpi-label">Inversión inicial · antes de IVA</div>
+    </div>
+    <div class="kpi warning">
+      <div class="kpi-num">$850.000</div>
+      <div class="kpi-label">Operación mensual · antes de IVA</div>
+    </div>
+    <div class="kpi purple">
+      <div class="kpi-num">16 semanas</div>
+      <div class="kpi-label">Implementación estimada</div>
+    </div>
+    <div class="kpi ok">
+      <div class="kpi-num">14 módulos</div>
+      <div class="kpi-label">Documentados y firmables</div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <aside class="toc">
+      <h3>En esta sección</h3>
+      <a href="#vision">Visión del proyecto</a>
+      <a href="#objetivo">Objetivo general</a>
+      <a href="#control">¿Qué podrá controlar?</a>
+      <a href="#flujo">Flujo de extremo a extremo</a>
+      <a href="#resumen-inversion">Inversión y forma de pago</a>
+      <a href="#empezar">Próximos pasos</a>
+    </aside>
+
+    <main>
+      <div class="card" id="vision">
+        <div class="section-title">
+          <div class="section-icon">🔭</div>
+          <div><h2>Visión del proyecto</h2><p>De la operación fragmentada a una trazabilidad comprobable de cada servicio y evento.</p></div>
+        </div>
+        <p>Diseñar e implementar una <strong>aplicación web centralizada</strong> para registrar, coordinar y consultar el ciclo operativo de los servicios ofrecidos a los clientes de Metro Cuadrado Eventos y Ferias, con visión por bodega, usuario, proveedor, orden y evento.</p>
+      </div>
+
+      <div class="card" id="objetivo">
+        <div class="section-title">
+          <div class="section-icon">🎯</div>
+          <div><h2>Objetivo general</h2><p>Qué se busca con esta plataforma, en una sola frase.</p></div>
+        </div>
+        <p><strong>Diseñar e implementar una aplicación web centralizada</strong> para registrar, coordinar y consultar el ciclo operativo completo de los servicios ofrecidos a los clientes de Metro Cuadrado Eventos y Ferias, con visión por <strong>bodega, usuario, proveedor, orden y evento</strong>.</p>
+
+        <h3>Objetivos específicos</h3>
+        <div class="module-grid">
+          <div class="module-card">
+            <h3>1 · Centralizar</h3>
+            <ul>
+              <li>Una sola fuente de verdad operativa.</li>
+              <li>Eliminar Excel, WhatsApp y papel como sistemas de facto.</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>2 · Trazar</h3>
+            <ul>
+              <li>Registrar quién hizo qué, cuándo y sobre qué.</li>
+              <li>Historial verificable por evento y por bodega.</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>3 · Coordinar</h3>
+            <ul>
+              <li>Conectar compras, ventas, logística e inventario.</li>
+              <li>Estados compartidos entre áreas en tiempo real.</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>4 · Controlar</h3>
+            <ul>
+              <li>Stock consistente y auditable por bodega.</li>
+              <li>Alertas de mínimos y excepciones operativas.</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>5 · Decidir</h3>
+            <ul>
+              <li>Reportes exportables por periodo, orden y bodega.</li>
+              <li>Información confiable para decisiones de negocio.</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>6 · Escalar</h3>
+            <ul>
+              <li>Base sólida para más bodegas y eventos.</li>
+              <li>Estructura preparada para futuras integraciones.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">Este objetivo se valida en el taller de arranque (semana 1) y se firma como parte de la línea base del proyecto.</div>
+      </div>
+
+      <div class="card" id="control">
+        <div class="section-title">
+          <div class="section-icon">🧩</div>
+          <div><h2>¿Qué podrá controlar la organización?</h2><p>Cinco capacidades operativas en una sola plataforma.</p></div>
+        </div>
+        <div class="impacts">
+          <div class="impact-card op">
+            <div class="ic-icon">👁️</div>
+            <span class="ic-tag">Visibilidad</span>
+            <h3>Visibilidad operacional</h3>
+            <p>Estado de solicitudes, compras, reservas, movimientos, despachos, entregas y devoluciones, con fecha y responsable.</p>
+          </div>
+          <div class="impact-card fin">
+            <div class="ic-icon">📦</div>
+            <span class="ic-tag">Inventario</span>
+            <h3>Inventario multi-bodega</h3>
+            <p>Existencias y movimientos por ubicación. Sin duplicaciones ni pérdida de información.</p>
+          </div>
+          <div class="impact-card str">
+            <div class="ic-icon">🤝</div>
+            <span class="ic-tag">Cliente</span>
+            <h3>Seguimiento del cliente</h3>
+            <p>Cada venta u orden vinculada a materiales, actividades logísticas y cumplimiento.</p>
+          </div>
+          <div class="impact-card op">
+            <div class="ic-icon">🏢</div>
+            <span class="ic-tag">Proveedores</span>
+            <h3>Control de proveedores</h3>
+            <p>Proveedores vinculados a compras, recepciones y pendientes documentales.</p>
+          </div>
+          <div class="impact-card fin">
+            <div class="ic-icon">🛡️</div>
+            <span class="ic-tag">Evidencia</span>
+            <h3>Gestión con evidencia</h3>
+            <p>Historial de cambios y reportes para decisiones y auditorías internas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="flujo">
+        <div class="section-title">
+          <div class="section-icon">🔗</div>
+          <div><h2>Trazabilidad de extremo a extremo</h2><p>Ejemplo real: cliente solicita un montaje para un evento.</p></div>
+        </div>
+        <div class="value-chain">
+          <div class="vc-step"><span class="vcs-num">1</span><p class="vcs-title">Cliente solicita</p><p class="vcs-desc">Registro único del evento</p></div>
+          <div class="vc-step"><span class="vcs-num">2</span><p class="vcs-title">Se crea orden</p><p class="vcs-desc">Orden de servicio asociada</p></div>
+          <div class="vc-step"><span class="vcs-num">3</span><p class="vcs-title">Se reservan insumos</p><p class="vcs-desc">Stock comprometido</p></div>
+          <div class="vc-step"><span class="vcs-num">4</span><p class="vcs-title">Faltantes → compra</p><p class="vcs-desc">Solicitud automática</p></div>
+          <div class="vc-step"><span class="vcs-num">5</span><p class="vcs-title">Recepción actualiza</p><p class="vcs-desc">Inventario al día</p></div>
+          <div class="vc-step"><span class="vcs-num">6</span><p class="vcs-title">Logística despacha</p><p class="vcs-desc">Alistamiento y guía</p></div>
+          <div class="vc-step"><span class="vcs-num">7</span><p class="vcs-title">Entrega y devolución</p><p class="vcs-desc">Estado del activo</p></div>
+          <div class="vc-step"><span class="vcs-num">8</span><p class="vcs-title">Cierre con historial</p><p class="vcs-desc">Evidencia operativa</p></div>
+        </div>
+        <div class="note">La plataforma no reemplaza un ERP completo. Es un <strong>MVP con flujos básicos</strong> que se amplía sobre una base sólida.</div>
+      </div>
+
+      <div class="card" id="resumen-inversion">
+        <div class="section-title">
+          <div class="section-icon">💰</div>
+          <div><h2>Inversión y forma de pago</h2><p>Esquema ajustado para incentivar la aceptación final.</p></div>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chartPagos" height="120"></canvas>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Hito</th><th>Pago sobre $22M</th><th>Valor antes de IVA</th></tr></thead>
+            <tbody>
+              <tr><td>Inicio y levantamiento</td><td>30%</td><td><strong>$6.600.000</strong></td></tr>
+              <tr><td>Diseño aprobado y base instalada</td><td>30%</td><td><strong>$6.600.000</strong></td></tr>
+              <tr><td>Entrega de versión piloto</td><td>25%</td><td><strong>$5.500.000</strong></td></tr>
+              <tr><td>Aceptación final y capacitación</td><td>15%</td><td><strong>$3.300.000</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note">Ajuste aplicado: se incrementó el pago final de 10% a 15% para alinear mejor el incentivo de aceptación y reducir el riesgo de entregas incompletas.</div>
+      </div>
+
+      <div class="card" id="empezar">
+        <div class="section-title">
+          <div class="section-icon">🚀</div>
+          <div><h2>Próximos pasos</h2><p>Hoja de ruta para la decisión.</p></div>
+        </div>
+        <ol class="steps-list">
+          <li><strong>Reunión de arranque</strong> con responsables de compras, ventas, logística, bodegas y proveedores.</li>
+          <li><strong>Validación conjunta del alcance MVP</strong>, ejemplo de servicio real, datos maestros y permisos.</li>
+          <li><strong>Aprobación del acta de diseño, cronograma y condiciones de contratación.</strong></li>
+          <li><strong>Construcción y revisiones con usuarios clave</strong> antes de ejecutar el piloto.</li>
+          <li><strong>Entrega progresiva, capacitación y activación de mantenimiento</strong> desde producción.</li>
+        </ol>
+      </div>
+    </main>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn" disabled><span class="nb-arrow">←</span><span class="nb-label"><small>Anterior</small><strong>Sin sección previa</strong></span></button>
+    <button class="nav-btn next" data-goto="s2"><span class="nb-arrow">→</span><span class="nb-label"><small>Siguiente</small><strong>Alcance y cronograma</strong></span></button>
+  </div>
+</section>
+
+<!-- ===================== TAB 2 · ALCANCE Y CRONOGRAMA ===================== -->
+<section class="tab-panel" id="s2">
+  <div class="tab-intro">
+    <h2>Alcance funcional y cronograma</h2>
+    <p>El presupuesto financia una base operativa integrada. Cada flujo está detallado y los tiempos son realistas.</p>
+  </div>
+
+  <div class="kpi-hero">
+    <div class="kpi"><div class="kpi-num">7</div><div class="kpi-label">Módulos MVP</div></div>
+    <div class="kpi warning"><div class="kpi-num">16 sem</div><div class="kpi-label">Duración total</div></div>
+    <div class="kpi purple"><div class="kpi-num">6</div><div class="kpi-label">Hitos con entrega</div></div>
+    <div class="kpi ok"><div class="kpi-num">+35</div><div class="kpi-label">Pantallas estimadas</div></div>
+  </div>
+
+  <div class="layout">
+    <aside class="toc">
+      <h3>En esta sección</h3>
+      <a href="#matriz">Matriz de alcance MVP</a>
+      <a href="#modulos">Detalle por módulo</a>
+      <a href="#cronograma">Cronograma y Gantt</a>
+      <a href="#entregables">Entregables por hito</a>
+      <a href="#capacitacion">Capacitación</a>
+    </aside>
+
+    <main>
+      <div class="card" id="matriz">
+        <div class="section-title">
+          <div class="section-icon">📋</div>
+          <div><h2>Matriz de alcance MVP</h2><p>Todo lo listado aquí está incluido. Lo demás se cotiza por control de cambios.</p></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Módulo</th><th>Pantallas / Vistas</th><th>Roles</th><th>Reportes</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Compras</strong></td><td>Solicitud, Orden, Recepción</td><td>Compras, Supervisor</td><td>Compras por proveedor; Pendientes</td></tr>
+              <tr><td><strong>Ventas y servicios</strong></td><td>Cliente, Orden de servicio, Seguimiento</td><td>Ventas, Coordinador</td><td>Órdenes por estado; Servicios por cliente</td></tr>
+              <tr><td><strong>Inventario</strong></td><td>Artículos, Existencias, Movimientos, Traslados</td><td>Bodega, Supervisor</td><td>Stock; Movimientos; Alertas</td></tr>
+              <tr><td><strong>Logística</strong></td><td>Alistamiento, Despacho, Entrega/Devolución</td><td>Logística, Bodega</td><td>Despachos; Devoluciones pendientes</td></tr>
+              <tr><td><strong>Proveedores</strong></td><td>Ficha, Historial</td><td>Compras, Supervisor</td><td>Compras por proveedor</td></tr>
+              <tr><td><strong>Usuarios y auditoría</strong></td><td>Login, Usuarios, Roles, Bitácora</td><td>Administrador</td><td>Bitácora</td></tr>
+              <tr><td><strong>Informes</strong></td><td>Panel, Exportación</td><td>Supervisor, Admin</td><td>6 reportes base</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="modulos">
+        <div class="section-title">
+          <div class="section-icon">⚙️</div>
+          <div><h2>Detalle funcional por módulo</h2><p>Reglas clave que se validan en el MVP.</p></div>
+        </div>
+
+        <div class="module-grid">
+          <div class="module-card">
+            <h3>Compras</h3>
+            <ul>
+              <li>Flujo: Solicitado → Aprobado → Ordenado → Recibido</li>
+              <li>Aprobación obligatoria para montos &gt; $500.000</li>
+              <li>Vinculación obligatoria a proveedor activo</li>
+              <li>Enlace automático a entradas de inventario</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>Ventas y servicios</h3>
+            <ul>
+              <li>Flujo: Solicitado → Aprobado → Reservado → Despachado → Cerrado</li>
+              <li>Vinculación obligatoria a reserva de inventario</li>
+              <li>Seguimiento por evento con responsable</li>
+              <li>Consulta de avances por operación</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>Inventario</h3>
+            <ul>
+              <li>Stock nunca negativo (salvo autorización)</li>
+              <li>Toda salida genera movimiento trazable</li>
+              <li>Reservas, devoluciones, ajustes y traslados</li>
+              <li>Multi-bodega con visibilidad por ubicación</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>Logística</h3>
+            <ul>
+              <li>Despacho requiere alistamiento completo</li>
+              <li>Devolución actualiza stock en bodega destino</li>
+              <li>Asignación de responsable por despacho</li>
+              <li>Vínculo con inventario y orden de servicio</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>Proveedores</h3>
+            <ul>
+              <li>No se crea OC sin proveedor activo</li>
+              <li>Historial básico de operaciones</li>
+              <li>Estado de entrega y pendientes documentales</li>
+            </ul>
+          </div>
+          <div class="module-card">
+            <h3>Usuarios y auditoría</h3>
+            <ul>
+              <li>Usuario solo ve bodegas asignadas</li>
+              <li>Bitácora de movimientos críticos</li>
+              <li>Validaciones y alertas configurables</li>
+              <li>Perfiles según función</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="cronograma">
+        <div class="section-title">
+          <div class="section-icon">📅</div>
+          <div><h2>Cronograma · 16 semanas</h2><p>Secuencia con dependencias. Se ajusta según validación de funcionalidades.</p></div>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="chartGantt" height="220"></canvas>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Hito</th><th>Ventana</th><th>Evidencia de entrega</th></tr></thead>
+            <tbody>
+              <tr><td><strong>F0 · Inicio</strong></td><td>Semana 1</td><td>Acta de inicio, interlocutores, calendario y acceso a procesos y datos.</td></tr>
+              <tr><td><strong>F1 · Descubrimiento</strong></td><td>Semanas 1–4</td><td>Mapa de procesos, historias de usuario, flujos, criterios de aceptación y prototipos.</td></tr>
+              <tr><td><strong>F2 · Base técnica</strong></td><td>Semanas 3–6</td><td>Modelo de datos, servidor, autenticación, permisos y entorno de pruebas.</td></tr>
+              <tr><td><strong>F3 · Construcción</strong></td><td>Semanas 5–12</td><td>Inventario, vínculos compras/ventas/logística/proveedores, paneles y modo offline.</td></tr>
+              <tr><td><strong>F4 · Validación</strong></td><td>Semanas 11–15</td><td>Pruebas integrales, migración inicial acotada, piloto y UAT con usuarios.</td></tr>
+              <tr><td><strong>F5 · Despliegue</strong></td><td>Semanas 15–16</td><td>Publicación, capacitación, manuales, respaldo y aceptación formal.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="entregables">
+        <div class="section-title">
+          <div class="section-icon">📦</div>
+          <div><h2>Entregables documentales</h2><p>Todo lo que el cliente recibe al cierre.</p></div>
+        </div>
+        <ul class="checklist-static">
+          <li>Acta de requerimientos aprobados</li>
+          <li>Mapa de procesos y prototipos</li>
+          <li>Arquitectura y modelo de datos</li>
+          <li>Matriz de permisos por rol y bodega</li>
+          <li>Aplicación desplegada y configurada</li>
+          <li>Casos de prueba y acta UAT firmada</li>
+          <li>Guía de usuario y administrador</li>
+          <li>Protocolo de respaldo y recuperación</li>
+        </ul>
+      </div>
+
+      <div class="card" id="capacitacion">
+        <div class="section-title">
+          <div class="section-icon">🎓</div>
+          <div><h2>Plan de capacitación</h2><p>Diseñado para maximizar la adopción desde la primera semana.</p></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Grupo</th><th>Horas</th><th>Modalidad</th><th>Evaluación</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Administradores</strong></td><td>8 horas</td><td>Presencial o virtual</td><td>Práctica con umbral 90%</td></tr>
+              <tr><td><strong>Usuarios operativos</strong></td><td>6 horas por rol</td><td>Virtual en vivo + grabación</td><td>Práctica con umbral 80%</td></tr>
+              <tr><td><strong>Usuarios clave (champions)</strong></td><td>10 horas</td><td>Presencial</td><td>Certificación interna</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">Materiales incluidos: manual de usuario, manual de administrador, videos cortos por módulo y guía de buenas prácticas.</div>
+      </div>
+    </main>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn" data-goto="s1"><span class="nb-arrow">←</span><span class="nb-label"><small>Anterior</small><strong>Resumen ejecutivo</strong></span></button>
+    <button class="nav-btn next" data-goto="s3"><span class="nb-arrow">→</span><span class="nb-label"><small>Siguiente</small><strong>Impacto esperado</strong></span></button>
+  </div>
+</section>
+
+<!-- ===================== TAB 3 · IMPACTO ===================== -->
+<section class="tab-panel" id="s3">
+  <div class="tab-intro">
+    <h2>Impacto esperado</h2>
+    <p>Del caos operativo al control trazable. Cómo esta plataforma cambia la operación día a día y qué beneficios genera en cada dimensión.</p>
+  </div>
+
+  <div class="kpi-hero">
+    <div class="kpi"><div class="kpi-num">+30%</div><div class="kpi-label">Eficiencia operativa</div></div>
+    <div class="kpi warning"><div class="kpi-num">-40%</div><div class="kpi-label">Tiempo en reportes</div></div>
+    <div class="kpi purple"><div class="kpi-num">-30%</div><div class="kpi-label">Errores de inventario</div></div>
+    <div class="kpi ok"><div class="kpi-num">-50%</div><div class="kpi-label">Pérdida de activos</div></div>
+  </div>
+
+  <div class="layout">
+    <aside class="toc">
+      <h3>En esta sección</h3>
+      <a href="#comparativa">Antes vs después</a>
+      <a href="#kpis">KPIs esperados</a>
+      <a href="#dimensiones">Impacto por dimensión</a>
+      <a href="#intangibles">Beneficios intangibles</a>
+    </aside>
+
+    <main>
+      <div class="card" id="comparativa">
+        <div class="section-title">
+          <div class="section-icon">⚖️</div>
+          <div><h2>Antes vs después</h2><p>El cambio operativo concreto.</p></div>
+        </div>
+        <div class="compare">
+          <div class="compare-col before">
+            <h3>Sin la plataforma</h3>
+            <p class="cc-sub">Operación fragmentada y reactiva</p>
+            <ul>
+              <li>Excel y WhatsApp como sistema de facto.</li>
+              <li>Stock que no cuadra entre bodegas.</li>
+              <li>No se sabe quién movió qué ni cuándo.</li>
+              <li>Compras de emergencia por falta de previsión.</li>
+              <li>Activos que se pierden sin registro.</li>
+              <li>Reportes manuales que consumen horas.</li>
+              <li>Cliente sin visibilidad de su evento.</li>
+              <li>Crecimiento limitado por falta de control.</li>
+            </ul>
+          </div>
+          <div class="compare-col after">
+            <h3>Con la plataforma</h3>
+            <p class="cc-sub">Operación integrada y proactiva</p>
+            <ul>
+              <li>Una sola fuente de verdad por rol.</li>
+              <li>Stock consistente y auditable.</li>
+              <li>Bitácora con fecha, hora y responsable.</li>
+              <li>Compras planificadas según reservas reales.</li>
+              <li>Check-in/check-out con evidencia.</li>
+              <li>Reportes automáticos en Excel y PDF.</li>
+              <li>Cliente con seguimiento de su orden.</li>
+              <li>Base escalable para más bodegas y eventos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="kpis">
+        <div class="section-title">
+          <div class="section-icon">📈</div>
+          <div><h2>KPIs esperados de impacto</h2><p>Métricas orientativas monitoreables a partir del mes 3.</p></div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="chartKpis" height="180"></canvas>
+        </div>
+      </div>
+
+      <div class="card" id="dimensiones">
+        <div class="section-title">
+          <div class="section-icon">🎯</div>
+          <div><h2>Impacto por dimensión</h2><p>Operativo, financiero y estratégico.</p></div>
+        </div>
+        <div class="impacts">
+          <div class="impact-card op">
+            <div class="ic-icon">⚙️</div>
+            <span class="ic-tag">Operativo</span>
+            <h3>Eficiencia y control del día a día</h3>
+            <ul>
+              <li>Menos tiempo buscando información dispersa.</li>
+              <li>Movimientos de inventario sin duplicaciones.</li>
+              <li>Despachos y devoluciones con trazabilidad.</li>
+              <li>Alertas tempranas de stock mínimo.</li>
+              <li>Menos errores humanos en registros.</li>
+              <li>Continuidad operativa con modo offline.</li>
+            </ul>
+          </div>
+          <div class="impact-card fin">
+            <div class="ic-icon">💰</div>
+            <span class="ic-tag">Financiero</span>
+            <h3>Ahorro y mejor uso del capital</h3>
+            <ul>
+              <li>Menos compras de emergencia.</li>
+              <li>Menos pérdidas de activos y materiales.</li>
+              <li>Mejor rotación de inventario.</li>
+              <li>Control de costos por evento y proveedor.</li>
+              <li>Reducción de horas administrativas.</li>
+              <li>Decisiones con datos, no con intuición.</li>
+            </ul>
+          </div>
+          <div class="impact-card str">
+            <div class="ic-icon">🚀</div>
+            <span class="ic-tag">Estratégico</span>
+            <h3>Crecimiento y competitividad</h3>
+            <ul>
+              <li>Capacidad de crecer sin perder control.</li>
+              <li>Servicio al cliente más profesional.</li>
+              <li>Historial verificable para auditorías.</li>
+              <li>Base para nuevas líneas de servicio.</li>
+              <li>Mejor reputación y confianza del cliente.</li>
+              <li>Ventaja frente a competidores informales.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="intangibles">
+        <div class="section-title">
+          <div class="section-icon">✨</div>
+          <div><h2>Beneficios intangibles</h2><p>El valor que no siempre aparece en la factura.</p></div>
+        </div>
+        <div class="intangibles">
+          <div class="intangible"><div class="it-icon">🧠</div><div class="it-body"><h4>Tranquilidad operativa</h4><p>El equipo deja de "apagar incendios" y trabaja con procesos claros.</p></div></div>
+          <div class="intangible"><div class="it-icon">🤝</div><div class="it-body"><h4>Confianza del cliente</h4><p>Seguimiento transparente del evento genera credibilidad.</p></div></div>
+          <div class="intangible"><div class="it-icon">📚</div><div class="it-body"><h4>Memoria institucional</h4><p>El conocimiento queda registrado y disponible.</p></div></div>
+          <div class="intangible"><div class="it-icon">🛡️</div><div class="it-body"><h4>Preparación para auditorías</h4><p>Historial verificable ante clientes corporativos.</p></div></div>
+          <div class="intangible"><div class="it-icon">⚡</div><div class="it-body"><h4>Decisiones ágiles</h4><p>Datos confiables en el momento justo.</p></div></div>
+          <div class="intangible"><div class="it-icon">🌱</div><div class="it-body"><h4>Escalabilidad sostenible</h4><p>La empresa puede crecer sin que el desorden crezca igual.</p></div></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn" data-goto="s2"><span class="nb-arrow">←</span><span class="nb-label"><small>Anterior</small><strong>Alcance y cronograma</strong></span></button>
+    <button class="nav-btn next" data-goto="s4"><span class="nb-arrow">→</span><span class="nb-label"><small>Siguiente</small><strong>Anexos técnicos</strong></span></button>
+  </div>
+</section>
+
+<!-- ===================== TAB 4 · ANEXOS ===================== -->
+<section class="tab-panel" id="s4">
+  <div class="tab-intro">
+    <h2>Anexos técnicos y comerciales</h2>
+    <p>Criterios ejecutables, medibles y verificables. Cierran los vacíos de la propuesta y protegen a ambas partes.</p>
+  </div>
+
+  <div class="layout">
+    <aside class="toc">
+      <h3>Índice de anexos</h3>
+      <a href="#a1">01 · Modo offline</a>
+      <a href="#a2">02 · Activos retornables</a>
+      <a href="#a3">03 · Seguridad y datos</a>
+      <a href="#a4">04 · SLA de soporte</a>
+      <a href="#a5">05 · Propiedad intelectual</a>
+      <a href="#a6">06 · Migración de datos</a>
+      <a href="#a7">07 · Costos por crecimiento</a>
+      <a href="#a8">08 · Roles FUNDASERINCO / DJ</a>
+      <a href="#a9">09 · Criterios UAT</a>
+      <a href="#a10">10 · Solicitud de cambio</a>
+      <a href="#a11">11 · Riesgos y mitigación</a>
+      <a href="#a12">12 · Condiciones comerciales</a>
+      <a href="#a13">13 · Supuestos y exclusiones</a>
+      <a href="#a14">14 · Gobierno y control</a>
+    </aside>
+
+    <main>
+      <!-- A1 -->
+      <div class="card" id="a1">
+        <div class="anexo-head"><div class="anexo-num">01</div><div><h2>Modo offline</h2><p>Funcionalidad de contingencia, no modo permanente.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Aspecto</th><th>Definición</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Módulos offline</strong></td><td>Inventario (movimientos básicos) y Logística (alistamiento y despacho)</td></tr>
+            <tr><td><strong>Almacenamiento local</strong></td><td>IndexedDB con máximo 500 registros pendientes</td></tr>
+            <tr><td><strong>Sincronización</strong></td><td>Automática cada 5 minutos si hay pendientes</td></tr>
+            <tr><td><strong>Conflictos</strong></td><td>Último movimiento prevalece. Bloqueo y notificación al supervisor si hay conflicto de stock</td></tr>
+            <tr><td><strong>Seguridad local</strong></td><td>Datos cifrados, borrados al cerrar sesión o tras 24 horas</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A2 -->
+      <div class="card" id="a2">
+        <div class="anexo-head"><div class="anexo-num">02</div><div><h2>Activos retornables</h2><p>Equipos, mobiliario y herramientas con trazabilidad completa.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Funcionalidad</th><th>Criterio</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Check-in / Check-out</strong></td><td>Estado inicial y final del activo con evidencia opcional</td></tr>
+            <tr><td><strong>Estados</strong></td><td>Disponible → Reservado → En evento → En devolución → En mantenimiento → Baja</td></tr>
+            <tr><td><strong>Mantenimiento</strong></td><td>Registro: fecha, tipo, costo, proveedor. Sin programación automática en v1</td></tr>
+            <tr><td><strong>Daños y pérdidas</strong></td><td>Genera novedad en el historial del activo</td></tr>
+            <tr><td><strong>Trazabilidad</strong></td><td>Código único por activo (QR opcional) e historial completo</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A3 -->
+      <div class="card" id="a3">
+        <div class="anexo-head"><div class="anexo-num">03</div><div><h2>Seguridad y protección de datos</h2><p>Alineado con la Ley 1581 de Colombia.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Control</th><th>Implementación</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Consentimiento</strong></td><td>Casilla de aceptación explícita con finalidad y derechos</td></tr>
+            <tr><td><strong>Permisos por bodega</strong></td><td>Usuario solo ve su(s) bodega(s) asignada(s)</td></tr>
+            <tr><td><strong>Cifrado</strong></td><td>HTTPS (TLS 1.2+), datos en reposo y offline cifrados</td></tr>
+            <tr><td><strong>Backups</strong></td><td>Diario completo + incremental cada 6 horas. Prueba mensual</td></tr>
+            <tr><td><strong>Retención</strong></td><td>5 años. Al terminar contrato: exportación y borrado en 30 días</td></tr>
+            <tr><td><strong>RTO / RPO</strong></td><td>RTO: 8 horas · RPO: 6 horas</td></tr>
+            <tr><td><strong>Autenticación</strong></td><td>Usuario + contraseña. 2FA opcional para admin</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A4 -->
+      <div class="card" id="a4">
+        <div class="anexo-head"><div class="anexo-num">04</div><div><h2>SLA de soporte</h2><p>Lunes a viernes, 8:00 a.m. – 6:00 p.m. Fuera de horario solo S1.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Severidad</th><th>Definición</th><th>Primera respuesta</th><th>Solución</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge b-crit">S1 · Crítica</span></td><td>Sistema caído, pérdida de datos</td><td>1 hora</td><td>8 horas</td></tr>
+            <tr><td><span class="badge b-alta">S2 · Alta</span></td><td>Módulo principal no funciona</td><td>4 horas</td><td>2 días hábiles</td></tr>
+            <tr><td><span class="badge b-media">S3 · Media</span></td><td>Funcionalidad secundaria con error</td><td>8 horas</td><td>5 días hábiles</td></tr>
+            <tr><td><span class="badge b-baja">S4 · Baja</span></td><td>Consulta o mejora menor</td><td>24 horas</td><td>Según backlog</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn">Bolsa mensual: <strong>20 horas</strong> incluidas. Horas adicionales: <strong>$45.000/hora</strong>. Disponibilidad objetivo: <strong>99.9%</strong>.</div>
+      </div>
+
+      <!-- A5 -->
+      <div class="card" id="a5">
+        <div class="anexo-head"><div class="anexo-num">05</div><div><h2>Propiedad intelectual y licencia</h2><p>Claridad total sobre titularidad y uso.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Aspecto</th><th>Definición</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Titularidad</strong></td><td>El proveedor conserva el código fuente y la propiedad intelectual</td></tr>
+            <tr><td><strong>Licencia</strong></td><td>Perpetua, no exclusiva, no transferible, para uso interno</td></tr>
+            <tr><td><strong>Código fuente</strong></td><td>No se entrega en v1. Se negocia escrow con costo adicional</td></tr>
+            <tr><td><strong>Datos del cliente</strong></td><td>Cliente dueño absoluto. Devolución o eliminación al terminar</td></tr>
+            <tr><td><strong>Confidencialidad</strong></td><td>NDA por 5 años</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A6 -->
+      <div class="card" id="a6">
+        <div class="anexo-head"><div class="anexo-num">06</div><div><h2>Migración de datos</h2><p>Alcance acotado y responsabilidades claras.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Aspecto</th><th>Definición</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Alcance</strong></td><td>Proveedores, artículos/activos, stock inicial, clientes activos</td></tr>
+            <tr><td><strong>Volumen máximo</strong></td><td>2.000 registros maestros + 5.000 movimientos históricos</td></tr>
+            <tr><td><strong>Responsabilidad</strong></td><td>Cliente: calidad de datos. Proveedor: carga y validación</td></tr>
+            <tr><td><strong>Momento</strong></td><td>Semana 12–13 (dentro del hito F4)</td></tr>
+            <tr><td><strong>Costo adicional</strong></td><td>$1.500.000 por cada 1.000 registros adicionales</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A7 -->
+      <div class="card" id="a7">
+        <div class="anexo-head"><div class="anexo-num">07</div><div><h2>Costos por crecimiento</h2><p>Precios congelados por 12 meses desde la firma.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Concepto</th><th>Precio antes de IVA</th></tr></thead>
+          <tbody>
+            <tr><td>Usuario adicional (más de 20)</td><td><strong>$35.000 / mes</strong></td></tr>
+            <tr><td>Bodega adicional (más de 3)</td><td><strong>$80.000 / mes</strong></td></tr>
+            <tr><td>Almacenamiento adicional (más de 20 GB)</td><td><strong>$15.000 / mes</strong> por 5 GB</td></tr>
+            <tr><td>Horas de soporte adicionales</td><td><strong>$45.000 / hora</strong></td></tr>
+            <tr><td>Migración adicional</td><td><strong>$1.500.000</strong> por 1.000 registros</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A8 -->
+      <div class="card" id="a8">
+        <div class="anexo-head"><div class="anexo-num">08</div><div><h2>Roles FUNDASERINCO vs DJ Ingeniería</h2><p>Claridad contractual y técnica.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Aspecto</th><th>FUNDASERINCO</th><th>DJ Ingeniería</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Rol comercial</strong></td><td>Contratante principal y responsable legal</td><td>Subcontratista técnico</td></tr>
+            <tr><td><strong>Responsabilidad técnica</strong></td><td>Gestión, levantamiento, capacitación, soporte 1.er nivel</td><td>Desarrollo, arquitectura, soporte 2.º y 3.er nivel</td></tr>
+            <tr><td><strong>Facturación</strong></td><td>Al cliente</td><td>A FUNDASERINCO</td></tr>
+            <tr><td><strong>Garantía</strong></td><td>Ante el cliente</td><td>Ante FUNDASERINCO</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A9 -->
+      <div class="card" id="a9">
+        <div class="anexo-head"><div class="anexo-num">09</div><div><h2>Criterios UAT medibles</h2><p>Pruebas objetivas antes de aceptación final.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Criterio</th><th>Métrica de aceptación</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Permisos</strong></td><td>100% de roles acceden solo a lo autorizado. 0 accesos indebidos</td></tr>
+            <tr><td><strong>Integridad de stock</strong></td><td>50 movimientos simulados → stock cuadra 100%</td></tr>
+            <tr><td><strong>Trazabilidad</strong></td><td>Orden vinculada a compras, reservas, despacho y devolución</td></tr>
+            <tr><td><strong>Modo offline</strong></td><td>20 movimientos sin conexión → 0 conflictos no resueltos</td></tr>
+            <tr><td><strong>Reportes</strong></td><td>6 reportes base exportan correctamente</td></tr>
+            <tr><td><strong>Backup</strong></td><td>Restauración exitosa en menos de 8 horas</td></tr>
+            <tr><td><strong>Capacitación</strong></td><td>90% de usuarios clave aprueban evaluación</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A10 -->
+      <div class="card" id="a10">
+        <div class="anexo-head"><div class="anexo-num">10</div><div><h2>Solicitud de cambio (SC)</h2><p>Formulario estándar para cambios posteriores.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Paso</th><th>Control mínimo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>01 · Registro</strong></td><td>Solicitante, descripción, motivo, prioridad, evidencia</td></tr>
+            <tr><td><strong>02 · Análisis</strong></td><td>Impacto funcional, técnico y de seguridad; horas y plazo</td></tr>
+            <tr><td><strong>03 · Decisión</strong></td><td>Aprobación o rechazo escrito por responsables</td></tr>
+            <tr><td><strong>04 · Planificación</strong></td><td>Asignación a sprint o nueva fase</td></tr>
+            <tr><td><strong>05 · Verificación</strong></td><td>Prueba, aceptación, manuales y cierre</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A11 -->
+      <div class="card" id="a11">
+        <div class="anexo-head"><div class="anexo-num">11</div><div><h2>Riesgos y mitigación</h2><p>Identificación temprana y plan de acción.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Riesgo</th><th>Probabilidad</th><th>Impacto</th><th>Mitigación</th></tr></thead>
+          <tbody>
+            <tr><td>Cambios de alcance</td><td><span class="badge b-alta">Alta</span></td><td><span class="badge b-crit">Alto</span></td><td>Control de cambios formal</td></tr>
+            <tr><td>Datos maestros incompletos</td><td><span class="badge b-media">Media</span></td><td><span class="badge b-crit">Alto</span></td><td>Validación temprana semana 4</td></tr>
+            <tr><td>Baja adopción de usuarios</td><td><span class="badge b-media">Media</span></td><td><span class="badge b-alta">Medio</span></td><td>Champions y manuales simples</td></tr>
+            <tr><td>Conflictos offline</td><td><span class="badge b-baja">Baja</span></td><td><span class="badge b-alta">Medio</span></td><td>Límite de 500 registros</td></tr>
+            <tr><td>Indisponibilidad del servidor</td><td><span class="badge b-baja">Baja</span></td><td><span class="badge b-crit">Alto</span></td><td>SLA 99.9% y backup</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A12 -->
+      <div class="card" id="a12">
+        <div class="anexo-head"><div class="anexo-num">12</div><div><h2>Condiciones comerciales</h2><p>Términos que refuerzan la propuesta.</p></div></div>
+        <div class="table-wrap"><table>
+          <tbody>
+            <tr><td><strong>Validez de la oferta</strong></td><td>30 días calendario</td></tr>
+            <tr><td><strong>Moneda</strong></td><td>Pesos colombianos (COP)</td></tr>
+            <tr><td><strong>IVA</strong></td><td>19%</td></tr>
+            <tr><td><strong>Forma de pago</strong></td><td>30/30/25/15</td></tr>
+            <tr><td><strong>Garantía de defectos</strong></td><td>3 meses desde aceptación final</td></tr>
+            <tr><td><strong>Confidencialidad</strong></td><td>NDA 5 años</td></tr>
+            <tr><td><strong>Jurisdicción</strong></td><td>Pereira, Risaralda</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <!-- A13 -->
+      <div class="card" id="a13">
+        <div class="anexo-head"><div class="anexo-num">13</div><div><h2>Supuestos y exclusiones</h2><p>Lo que NO incluye el presupuesto.</p></div></div>
+        <ul class="checklist-static">
+          <li>Facturación electrónica, contabilidad, pagos o nómina</li>
+          <li>Rutas GPS en vivo, marketplace o apps móviles nativas</li>
+          <li>Analítica avanzada o inteligencia artificial</li>
+          <li>Integraciones ERP, WhatsApp o pasarelas de pago</li>
+          <li>Migración masiva no dimensionada</li>
+          <li>Equipos, escáneres o licencias de terceros no identificadas</li>
+        </ul>
+        <div class="note">Estas necesidades se analizan y cotizan mediante control de cambios.</div>
+      </div>
+
+      <!-- A14 -->
+      <div class="card" id="a14">
+        <div class="anexo-head"><div class="anexo-num">14</div><div><h2>Gobierno y control</h2><p>Cadencia y responsabilidades del proyecto.</p></div></div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Actor</th><th>Responsabilidad</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Patrocinador del cliente</strong></td><td>Prioriza inversiones, aprueba alcance, cambios y actas</td></tr>
+            <tr><td><strong>Líder operativo del cliente</strong></td><td>Consolida requerimientos y coordina usuarios de prueba</td></tr>
+            <tr><td><strong>Líder del proyecto proveedor</strong></td><td>Organiza entregas, presenta avances y riesgos</td></tr>
+            <tr><td><strong>Equipo técnico</strong></td><td>Desarrolla, documenta, prueba y prepara despliegue</td></tr>
+          </tbody>
+        </table></div>
+        <div class="note">Gestión: reunión semanal de avance · demostración quincenal · registro de decisiones · tablero de pendientes · actas por hito.</div>
+      </div>
+    </main>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn" data-goto="s3"><span class="nb-arrow">←</span><span class="nb-label"><small>Anterior</small><strong>Impacto esperado</strong></span></button>
+    <button class="nav-btn next" disabled><span class="nb-arrow">→</span><span class="nb-label"><small>Siguiente</small><strong>Fin del documento</strong></span></button>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p><strong>FUNDASERINCO</strong> · Pereira, Risaralda · WhatsApp: 304 681 4396 · fundaserinco@gmail.com</p>
+  <p>En alianza con <strong>DJ Ingeniería del Eje S.A.S.</strong> · "Nacimos para servir"</p>
+  <p class="footer-small">Propuesta definitiva v2.0 · Octubre 2026 · Válida por 30 días calendario</p>
+</footer>
+
+<!-- ===================== NAV FLOTANTE ===================== -->
+<div class="float-nav">
+  <button class="float-btn" id="floatPrev" title="Sección anterior (←)">↑</button>
+  <button class="float-btn" id="floatNext" title="Sección siguiente (→)">↓</button>
+</div>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="js/main.js" defer></script>
+<script src="js/charts.js" defer></script>
+
+</body>
+</html>
