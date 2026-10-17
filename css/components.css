@@ -23,7 +23,7 @@
   color:var(--navy); letter-spacing:-.02em; line-height:1.15;
 }
 .kpi-label{
-  font-size:11px; color:var(--text-soft);
+Y  font(--size:11px; color:var(--text-soft);
   text-transform:uppercase; letter-spacing:.08em;
   margin-top:6px; font-weight:600;
 }
@@ -78,6 +78,7 @@
 .table-wrap{
   overflow-x:auto; border:1px solid var(--border);
   border-radius:10px; margin:6px 0 4px;
+  -webkit-overflow-scrolling:touch;
 }
 table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:560px;}
 thead th{
@@ -121,7 +122,7 @@ tbody td strong{color:var(--navy);}
   box-shadow:var(--shadow); transition:all .2s ease;
   position:relative; overflow:hidden;
 }
-.impact-card:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg);}
+.impact-card:hover{transform:translate3px); box-shadow:var(--shadow-lg);}
 .impact-card::before{content:""; position:absolute; top:0; left:0; right:0; height:4px;}
 .impact-card.op::before{background:var(--teal);}
 .impact-card.fin::before{background:var(--blue);}
@@ -310,6 +311,7 @@ tbody td strong{color:var(--navy);}
   position:relative;
   height:320px;
 }
+.chart-wrap canvas{max-width:100%;}
 
 /* ===================== ACTIONS ===================== */
 .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:22px;}
@@ -344,6 +346,8 @@ tbody td strong{color:var(--navy);}
 .conclusion strong{color:#fff;}
 
 /* ===================== RESPONSIVE ===================== */
+
+/* Tablet horizontal */
 @media (max-width:1000px){
   .kpi-hero{grid-template-columns:repeat(2,1fr);}
   .impacts{grid-template-columns:repeat(2,1fr);}
@@ -353,14 +357,149 @@ tbody td strong{color:var(--navy);}
   .vc-step{flex:1 1 50%;}
   .vc-step:not(:last-child)::after{display:none;}
 }
+
+/* Tablet vertical / mobile grande */
 @media (max-width:720px){
-  .kpi-hero{grid-template-columns:1fr 1fr; padding:0 16px;}
-  .kpi-num{font-size:18px;}
+  .kpi-hero{grid-template-columns:1fr 1fr; padding:0 16px; gap:10px; margin-top:12px;}
+  .kpi{padding:12px 14px;}
+  .kpi-num{font-size:17px;}
+  .kpi-label{font-size:10px; letter-spacing:.06em;}
   .impacts{grid-template-columns:1fr;}
   .module-grid{grid-template-columns:1fr;}
   #objetivo .module-grid{grid-template-columns:1fr;}
   .compare{grid-template-columns:1fr;}
   .intangibles{grid-template-columns:1fr;}
   .value-chain{flex-direction:column;}
-  .vc-step{flex:1 1 auto;}
-}   
+  .vc-step{flex:1 1 auto; padding:16px 12px;}
+
+  /* Cards más compactas */
+  .card{padding:18px 16px; margin-bottom:14px;}
+  .card h3{font-size:12px;}
+  .section-title{gap:10px; padding-bottom:12px; margin-bottom:14px;}
+  .section-title h2{font-size:18px;}
+  .section-title p{font-size:12px;}
+  .section-icon{width:38px; height:38px; font-size:18px; border-radius:10px;}
+
+  .anexo-head{gap:10px; margin-bottom:14px; padding-bottom:12px;}
+  .anexo-head h2{font-size:16px;}
+  .anexo-head p{font-size:12px;}
+  .anexo-num{width:34px; height:34px; font-size:13px;}
+
+  /* Charts más bajos */
+  .chart-wrap{height:280px; padding:14px;}
+
+  /* Conclusion */
+  .conclusion{padding:20px 18px; margin-top:20px;}
+  .conclusion h3{font-size:17px;}
+  .conclusion p{font-size:13px;}
+
+  /* Steps list */
+  .steps-list{font-size:13.5px; padding-left:22px;}
+
+  /* Impact cards */
+  .impact-card{padding:18px 16px 14px;}
+  .impact-card h3{font-size:14.5px;}
+  .impact-card .ic-icon{width:40px; height:40px; font-size:20px; margin-bottom:10px;}
+
+  /* Intangibles */
+  .intangible{padding:14px; gap:12px;}
+  .intangible .it-icon{width:38px; height:38px; font-size:18px;}
+
+  /* Compare */
+  .compare{gap:14px; margin:18px 0;}
+  .compare-col{padding:18px 16px 14px;}
+
+  /* Tabla: sombra lateral que sugiere scroll horizontal */
+  .table-wrap{
+    position:relative;
+    background:
+      linear-gradient(to right, #fff 30%, rgba(255,255,255,0)) left center,
+      linear-gradient(to left, #fff 30%, rgba(255,255,255,0)) right center,
+      radial-gradient(farthest-side at 0 50%, rgba(22,41,61,.10), transparent) left center,
+      radial-gradient(farthest-side at 100% 50%, rgba(22,41,61,.10), transparent) right center;
+    background-repeat:no-repeat;
+    background-color:#fff;
+    background-size:32px 100%, 32px 100%, 12px 100%, 12px 100%;
+    background-attachment:local, local, scroll, scroll;
+  }
+  table{min-width:520px; font-size:12.5px;}
+  thead th{padding:9px 11px; font-size:11.5px;}
+  tbody td{padding:9px 11px;}
+}
+
+/* Mobile mediano */
+@media (max-width:520px){
+  .kpi-hero{gap:8px;}
+  .kpi-num{font-size:16px;}
+  .section-title h2{font-size:17px;}
+  .chart-wrap{height:270px; padding:12px;}
+  .conclusion h3{font-size:16px;}
+  .conclusion p{font-size:12.5px;}
+}
+
+/* Mobile pequeño */
+@media (max-width:420px){
+  .kpi-hero{grid-template-columns:1fr; padding:0 12px; gap:8px;}
+  .kpi{padding:11px 13px;}
+  .kpi-num{font-size:16px;}
+
+  .card{padding:16px 13px; margin-bottom:12px;}
+  .section-title h2{font-size:16px;}
+  .section-title p{font-size:11.5px;}
+  .section-icon{width:34px; height:34px; font-size:16px; border-radius:9px;}
+
+  .anexo-head h2{font-size:15px;}
+  .anexo-head p{font-size:11.5px;}
+  .anexo-num{width:30px; height:30px; font-size:12px; border-radius:8px;}
+
+  .chart-wrap{height:250px; padding:10px;}
+
+  .conclusion{padding:18px 14px; border-radius:10px;}
+  .conclusion h3{font-size:16px;}
+  .conclusion p{font-size:12.5px;}
+
+  .module-card{padding:14px;}
+  .module-card h3{font-size:13.5px;}
+  .module-card ul{font-size:12.5px; padding-left:16px;}
+
+  .impact-card{padding:16px 14px 12px;}
+  .impact-card h3{font-size:14px;}
+  .impact-card ul li{font-size:12.5px; padding:6px 0 6px 18px;}
+  .impact-card .ic-icon{width:36px; height:36px; font-size:18px;}
+
+  .intangible{padding:12px; gap:10px;}
+  .intangible .it-icon{width:34px; height:34px; font-size:16px;}
+  .intangible .it-body h4{font-size:13px;}
+  .intangible .it-body p{font-size:12px;}
+
+  .compare-col{padding:16px 14px 12px;}
+  .compare-col ul li{font-size:12.5px; padding:8px 0 8px 26px;}
+
+  .checklist-static li{font-size:12.5px; padding:8px 12px 8px 36px;}
+  .checklist-static li::before{left:12px;}
+
+  .note, .warn{font-size:12.5px; padding:10px 12px;}
+  .badge{font-size:10px; padding:2px 8px;}
+
+  table{min-width:480px; font-size:12px;}
+  thead th{padding:8px 10px; font-size:11px;}
+  tbody td{padding:8px 10px;}
+
+  .vc-step{padding:14px 10px;}
+  .vc-step .vcs-title{font-size:12px;}
+  .vc-step .vcs-desc{font-size:10.5px;}
+  .vc-step .vcs-num{width:24px; height:24px; font-size:11px; margin-bottom:8px;}
+
+  .steps-list{font-size:13px; padding-left:20px;}
+  .steps-list li{margin-bottom:8px;}
+}
+
+/* Mobile extra pequeño */
+@media (max-width:360px){
+  .kpi-num{font-size:15px;}
+  .section-title h2{font-size:15px;}
+  .chart-wrap{height:235px;}
+  .card{padding:14px 12px;}
+  table{min-width:440px; font-size:11.5px;}
+  .impact-card .ic-icon{width:34px; height:34px; font-size:16px;}
+}
